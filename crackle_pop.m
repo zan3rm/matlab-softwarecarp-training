@@ -12,15 +12,22 @@
 
 
 function out = crackle_pop(i)
-        if(rem(i,15)==0)
-            out = 'CracklePop';
-        elseif (rem(i,3)==0)
-            out = 'Crackle';
-        elseif(rem(i,5)==0)
-            out = 'Pop';
-        else
-            out = i;
-        end
+
+if isnumeric(i)
+
+    if(rem(i,15)==0)
+        out = 'CracklePop';
+    elseif (rem(i,3)==0)
+        out = 'Crackle';
+    elseif(rem(i,5)==0)
+        out = 'Pop';
+    else
+        out = i;
+    end
+        
+else
+    %this handles what happens if the input is not a number
+    error('The argument must be a number');
 end
 
     
