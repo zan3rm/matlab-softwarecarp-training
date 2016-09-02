@@ -5,6 +5,10 @@
     % if the number is divisible by five, prints 'Pop'
     % if the number is divisible by both three and five prints 'CracklePop'
     % else just prints the number
+    
+% The idea from this exercise came from Recurse Center
+
+% This function has no side-effects (i.e. it is self-contained)
 
 
 function out = crackle_pop(i)
