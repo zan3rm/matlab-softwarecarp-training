@@ -1,6 +1,6 @@
 %Function created for the Matlab Software Carpentry workshop.
 
-%This function conversts from temperature in Kelvin to Celsius
+%This function converts from temperature in Kelvin to Celsius
 
 function temp_cels = kelvin_to_cels(temp_kelvin)
 
